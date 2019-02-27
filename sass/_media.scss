@@ -1,3 +1,5 @@
+// Медиа ширина
+
 @media(max-width: 850px) {
     header {
         padding: 0 20px;
@@ -21,6 +23,35 @@
         }
     }
 }
+// LArge desktop
+
+// @media(min-width: 1200px) {
+//     main .left-square {
+//         width: 400px;
+//         height: 240px;
+//         top: 35px;
+//     }
+//     main .right-square {
+//         width: 330px;
+//         height: 200px;
+//     }
+
+// }
+
+@media(min-width: 800px) {
+    main .right-square {
+        width: 200px;
+        height: 180px;
+    }
+
+    main .left-square {
+        width: 213px;
+        height: 230px;
+    }
+}
+
+
+// Медиа высота
 
 @media(max-height: 700px) {
     main .right-square {
@@ -32,9 +63,23 @@
     }
 }
 
+@media(min-height: 600px) {
+    main #my-skills {
+        margin-bottom: 0;
+    }
+
+    main #my-skills .skill-stat .html-skill {
+        height: 20px;
+    }
+}
+
 @media(max-height: 600px) {
     main #brand-name {
         top: 60px;
+    }
+
+    main #my-skills {
+        top: 35%;
     }
 
     main #contact form .contact {
