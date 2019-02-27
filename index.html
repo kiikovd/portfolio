@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page</title>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.2.3/jquery.mmenu.all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.2.3/jquery.mmenu.all.css" />
+    <link rel="stylesheet" href="libs/css-hamburgers/dist/hamburgers.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="my-page">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Хедер -->
+                <header>
+                    <div class="logo">tsarev.</div>
+                    <nav id="my-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Portfolio</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Portfolio</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="hamburger hamburger--collapse menu-toggle" type="button" id="my-button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </header>
+
+                <main>
+                    <!-- Квадратики -->
+                    <div class="left-square"></div>
+                    <div class="right-square"></div>
+                    <!-- Бренд с именем -->
+                    <section id="brand-name">
+                        <span>ALEX TSAREV</span>
+                        <p>Full Stack Web Developer</p>
+                        <div class="hire-me">
+                            <span>HIRE ME</span>
+                        </div>
+                        <div class="explore-more">
+                            <span>LEARN MORE</span>
+                        </div>
+                    </section>
+
+                    <section id="about">
+                        <h1 style="margin-bottom: 0;">ABOUT</h1>
+                        <div class="top-stick"></div>
+                        <div class="bottom-stick"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In modi doloremque facilis soluta!
+                            Harum earum sapiente eaque quia doloremque necessitatibus numquam error aliquid dicta
+                            temporibus illo sint quam, repudiandae rerum fugit possimus laborum ratione ducimus?
+                        </p>
+                        <div class="download-cv">
+                            <span>DOWNLOAD MY CV</span>
+                        </div>
+                    </section>
+                    <!-- My skills -->
+                    <section id="my-skills">
+                        <h1 style="margin-bottom: 0;">MY SKILLS</h1>
+                        <div class="top-stick"></div>
+                        <div class="bottom-stick"></div>
+                        <div class="skill-stat">
+                            <div class="html-skill">
+                                <span class="lang">HTML/CSS</span>
+                                <div class="html-scale"></div>
+                            </div>
+                            <div class="js-skill">
+                                <span class="lang">JS</span>
+                                <div class="js-scale"></div>
+                            </div>
+                            <div class="java-skill">
+                                <span class="lang">JAVA</span>
+                                <div class="java-scale"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- What I do -->
+                    <section id="i-do" data-aos="zoom-in">
+                        <img src="img/i-do-background.png" alt="image" class="responsive backgound-image">
+                        <div class="i-do_square animated fadeIn">
+                            <h1 style="margin: 0; padding-top: 20px;">WHAT I DO</h1>
+                            <div class="top-stick"></div>
+                            <div class="bottom-stick"></div>
+                            <div class="col-xs-6">
+                                <div class="front-end">
+                                    <img src="img/monitor.png" alt="">
+                                    <h1 style="margin: 10px;">Front-end</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Accusamus, porro!
+                                        Consequuntur atque velit quod, ipsam nulla animi autem necessitatibus pariatur.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="back-end">
+                                    <img src="img/coding.png" alt="">
+                                    <h1 style="margin: 10px;">Back-end</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rem,
+                                        reprehenderit omnis similique vero velit. Error labore magni minus in.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- Func fact -->
+                    <section id="fun-fact" data-aos="zoom-in">
+                        <img src="img/fun-background.png" alt="" class="responsive">
+                        <div class="fun-fact_square">
+                            <h1 style="margin: 0; padding-top: 20px;">FUN FACT</h1>
+                            <div class="top-stick"></div>
+                            <div class="bottom-stick"></div>
+                            <h2 style="margin: 0;">10</h2>
+                            <p>Years Experience</p>
+                            <h2 style="margin: 0;">120</h2>
+                            <p>Projects Delivered</p>
+                            <h2 style="margin: 0;">10</h2>
+                            <p>Seconds on this site!</p>
+                            <p>What are you waiting for?</p>
+                        </div>
+                    </section>
+
+                    <!-- Contact me -->
+                    <section id="contact">
+                        <h1 style="margin: 0; text-align: center;">CONTACT ME</h1>
+                        <div class="top-stick"></div>
+                        <div class="bottom-stick"></div>
+                        <form action="#">
+                            <label for="name">Name:</label>
+                            <input type="text" value="" id="name" name="name" class="name">
+                            <label for="email" style="margin-top: 8px;display: block;">Email:</label>
+                            <input type="email" value="" id="email" name="email" class="email" >
+                            <label for="message" style="margin-top: 10px; display: block;">Your message:</label>
+                            <textarea rows="4" class="message" id="message" name="message"></textarea>
+                            <input type="submit" class="contact" value="Send message">
+                        </form>
+                    </section>
+
+                    <!-- Footer -->
+                    <section id="footer">
+                        <div class="socials">
+                            <a href="#">
+                                <div class="social">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="social">
+                                    <i class="fab fa-telegram fa-2x"></i>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="social">
+                                    <i class="fab fa-google-plus-g fa-2x"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/src.js"></script>
+</body>
+
+</html>

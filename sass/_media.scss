@@ -1,0 +1,44 @@
+@media(max-width: 850px) {
+    header {
+        padding: 0 20px;
+        padding-right: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+
+        ul {
+            display: block;
+
+            li:hover {
+                border: none;
+            }
+        }
+    }
+}
+
+@media(max-height: 700px) {
+    main .right-square {
+        height: 144px;
+    }
+
+    main .left-square {
+        height: 180px;
+    }
+}
+
+@media(max-height: 600px) {
+    main #brand-name {
+        top: 60px;
+    }
+
+    main #contact form .contact {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}

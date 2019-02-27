@@ -1,0 +1,453 @@
+@import "fonts";
+@import "libs";
+@import "vars";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #cccccc;
+  margin: 0;
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mm-listview {
+  text-align: center;
+}
+
+.menu-toggle {
+  float: right;
+  outline: none;
+  display: none;
+}
+
+header {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  padding: 0 100px;
+  width: 100%;
+
+  .logo {
+    font-family: "RobotoBold";
+    color: #212121;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+  }
+
+  nav {
+    float: right;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        list-style: none;
+
+        a {
+          height: 50px;
+          line-height: 50px;
+          padding: 0 20px;
+          color: #212121;
+          text-decoration: none;
+          padding-bottom: 5px;
+
+          &:hover {
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  height: calc(100vh - 300px);
+  width: 100%;
+  position: relative;
+
+  .left-square {
+    position: absolute;
+    left: -10px;
+    top: 50px;
+    height: 50%;
+    width: 40%;
+    border: solid 10px #e1e1e1;
+  }
+
+  .right-square {
+    position: absolute;
+    right: 0;
+    top: 75px;
+    height: 40%;
+    width: 35%;
+    border: solid 8px #ffffff;
+    border-right: none;
+  }
+
+  #brand-name {
+    position: relative;
+    top: 20%;
+    left: 20px;
+    height: 127px;
+    width: 60%;
+
+    .hire-me {
+      border-radius: 3px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border: 1px solid black;
+      position: absolute;
+      width: 38%;
+      height: 40px;
+      left: 0;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .explore-more {
+      border-radius: 3px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border: 1px solid black;
+      position: absolute;
+      width: 57%;
+      height: 40px;
+      right: 0;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // Обо мне
+  #about {
+    position: relative;
+    top: 30%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+
+    .top-stick {
+      margin: 5px auto;
+      height: 3px;
+      background-color: #000;
+      width: 35%;
+    }
+
+    .bottom-stick {
+      margin: 7px auto;
+      height: 3px;
+      background-color: #000;
+      width: 20%;
+    }
+
+    .download-cv {
+      margin-top: 40px;
+
+      span {
+        padding: 15px 25px;
+        color: white;
+        background: black;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  // МОИ СКИЛЫ
+  #my-skills {
+    position: relative;
+    top: 45%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    height: 100px;
+    margin-bottom: 20px;
+
+    .top-stick {
+      margin: 5px auto;
+      height: 3px;
+      background-color: #000;
+      width: 35%;
+    }
+
+    .bottom-stick {
+      margin: 8px auto;
+      height: 3px;
+      background-color: #000;
+      width: 18%;
+      margin-bottom: 30px;
+    }
+
+    .skill-stat {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+
+      .lang {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        font-weight: bold;
+      }
+
+      .html-skill {
+        background-color: #dfdfdf;
+        height: 15px;
+        width: 85%;
+        position: relative;
+
+        .html-scale {
+          height: 100%;
+          width: 80%;
+          background-color: #212121;
+        }
+      }
+
+      .js-skill {
+        @extend .html-skill;
+
+        .js-scale {
+          height: 100%;
+          width: 68%;
+          background-color: #212121;
+        }
+      }
+
+      .java-skill {
+        @extend .html-skill;
+
+        .java-scale {
+          height: 100%;
+          width: 75%;
+          background-color: #212121;
+        }
+      }
+    }
+  }
+
+  // ЧЕМ Я ЗАНИМАЮСЬ
+  #i-do {
+    position: relative;
+    top: 75%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    .backgound-image {
+      position: relative;
+      z-index: -1;
+    }
+
+    .i-do_square {
+      height: auto;
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      top: -45px;
+      background-color: white;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+
+      .top-stick {
+        margin: 5px auto;
+        height: 3px;
+        background-color: #000;
+        width: 55%;
+      }
+
+      .bottom-stick {
+        margin: 8px auto;
+        height: 3px;
+        background-color: #000;
+        width: 18%;
+        margin-bottom: 30px;
+      }
+
+      .front-end {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+      }
+
+      .back-end {
+        @extend .front-end;
+      }
+    }
+  }
+
+  // СМЕШНОЙ ФАКТ
+  #fun-fact {
+    height: auto;
+    position: relative;
+    top: 70%;
+
+    .fun-fact_square {
+      height: auto;
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      top: -45px;
+      background-color: white;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding-bottom: 20px;
+
+      .top-stick {
+        margin: 5px auto;
+        height: 3px;
+        background-color: #000;
+        width: 55%;
+      }
+
+      .bottom-stick {
+        margin: 8px auto;
+        height: 3px;
+        background-color: #000;
+        width: 18%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  // СВЯЗЬ
+  #contact {
+    height: auto;
+    position: relative;
+    top: 65%;
+
+    .top-stick {
+      margin: 5px auto;
+      height: 3px;
+      background-color: #000;
+      width: 55%;
+    }
+
+    .bottom-stick {
+      margin: 8px auto;
+      height: 3px;
+      background-color: #000;
+      width: 18%;
+      margin-bottom: 10px;
+    }
+
+    form {
+      width: 90%;
+      margin: 0 auto;
+
+      .name {
+        display: block;
+        width: 45%;
+        height: 20px;
+        margin-top: 10px;
+        background-color: inherit;
+        padding: 0;
+        border: none;
+        border-bottom: 1px solid black;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .email {
+        @extend .name;
+      }
+
+      .message {
+        display: block;
+        width: 100%;
+        padding: 0;
+        resize: none;
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid black;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .contact {
+        padding: 8px 12px;
+        color: black;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+        background-color: inherit;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: -20px;
+      }
+    }
+  }
+
+  //ФУТЕР
+  #footer {
+    background-color: #212121;
+    height: 90px;
+    position: relative;
+    top: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .socials {
+      width: 80%;
+      height: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        text-decoration: none
+      }
+
+      .social {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        &:hover {
+          background: #fff;
+          color: #0077b5;
+        }
+      }
+    }
+  }
+}
+
+@import "media";
