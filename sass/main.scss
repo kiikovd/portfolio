@@ -111,7 +111,7 @@ main {
       background-color: white;
       border: 1px solid black;
       position: absolute;
-      width: 38%;
+      width: 80px;
       height: 40px;
       left: 0;
 
@@ -131,9 +131,9 @@ main {
       background-color: white;
       border: 1px solid black;
       position: absolute;
-      width: 57%;
+      width: 120px;
       height: 40px;
-      right: 0;
+      right: -20px;
 
       &:hover {
         background-color: black;
