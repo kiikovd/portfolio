@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="libs/css-hamburgers/dist/hamburgers.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/libs/animate.css/animate.min.css">
 </head>
 
 <body>
@@ -73,8 +74,10 @@
                             Harum earum sapiente eaque quia doloremque necessitatibus numquam error aliquid dicta
                             temporibus illo sint quam, repudiandae rerum fugit possimus laborum ratione ducimus?
                         </p>
-                        <div class="download-cv">
-                            <span>DOWNLOAD MY CV</span>
+                        <div class="download-cv animated pulse slow delay-5s yourElement">
+                            <a href="#">
+                                <span id="getCv">DOWNLOAD MY CV</span>
+                            </a>
                         </div>
                     </section>
                     <!-- My skills -->
@@ -150,7 +153,7 @@
                             <label for="name">Name:</label>
                             <input type="text" value="" id="name" name="name" class="name">
                             <label for="email" style="margin-top: 8px;display: block;">Email:</label>
-                            <input type="email" value="" id="email" name="email" class="email" >
+                            <input type="email" value="" id="email" name="email" class="email">
                             <label for="message" style="margin-top: 10px; display: block;">Your message:</label>
                             <textarea rows="4" class="message" id="message" name="message"></textarea>
                             <input type="submit" class="contact" value="Send message">
